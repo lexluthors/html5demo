@@ -1,0 +1,49 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: magenta;
+}
+
+.div2{
+    /*这是移动，第一个参数x轴移动长度，第二个是y轴移动距离*/
+    transform: translate(200px,100px);
+    -webkit-transform: translate(200px,100px);/*这是一个Safari和Chrome浏览器的支持*/
+    -ms-transform: translate(200px,100px);/*ie浏览器*/
+    -o-transform: translate(200px,100px);/*opera浏览器*/
+    -moz-transform: translate(200px,100px);/*firefox浏览器*/
+}
+.div2{
+    /*这是旋转，参数是角度*/
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);/*这是一个Safari和Chrome浏览器的支持*/
+    -ms-transform: rotate(180deg);/*ie浏览器*/
+    -o-transform: rotate(180deg);/*opera浏览器*/
+    -moz-transform: rotate(180deg);/*firefox浏览器*/
+}
+
+.div2{
+    /*这是缩放，第一个是宽的倍数，第二个是高缩放倍数*/
+    margin-top: 200px;
+    transform: scale(1,2);
+    -webkit-transform: scale(1,2);/*这是一个Safari和Chrome浏览器的支持*/
+    -ms-transform: scale(1,2);/*ie浏览器*/
+    -o-transform: scale(1,2);/*opera浏览器*/
+    -moz-transform: scale(1,2);/*firefox浏览器*/
+}
+.div2{
+    /*这是倾斜动画，第一个X轴倾斜角度，第二个是y轴倾斜角度*/
+    margin-top: 200px;
+    transform: skew(20deg,20deg);
+    -webkit-transform: skew(20deg,20deg);/*这是一个Safari和Chrome浏览器的支持*/
+    -ms-transform: skew(20deg,20deg);/*ie浏览器*/
+    -o-transform: skew(20deg,20deg);/*opera浏览器*/
+    -moz-transform: skew(20deg,20deg);/*firefox浏览器*/
+}
+.div2{
+    /*3d旋转动画*/
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(100deg);
+    -ms-transform: rotateX(100deg);
+    -o-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+}

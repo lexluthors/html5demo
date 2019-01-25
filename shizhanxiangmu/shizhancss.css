@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: snow;
+}
+.wrapper{
+    width: 80%;
+    height: 1000px;
+    background-color: antiquewhite;
+    margin: 0px auto;
+}
+.heading{
+    margin: 0px auto;
+    width: 100%;
+    height: 90px;
+    background-color: snow;
+}
+.heading_title{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: burlywood;
+}
+.heading_nav{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+ul{
+    margin-left: 40px;
+    float: left;
+    list-style-type: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+a:link,a:visited{/*a的连接，和点击效果*/
+    font-weight: bold;
+    color: darkgray;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;/*去掉下划线*/
+
+}
+li{
+    padding-left: 10px;
+    display: inline;
+}
+a:hover,a:active{/*鼠标放上去的效果，和正在点击的效果*/
+    color: dimgray;
+}
+.heading_img img{
+    border-radius: 30px;/*圆角尺寸*/
+    display: inline;/*设置一行*/
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    float: right;
+}
+.heading_soptlight form{
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    position: relative;
+    margin-right: 100px;
+    background: none;
+}
+form input{
+    height: 26px;
+    border-radius: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.body{
+    padding: 30px;
+    height: auto;
+    width: auto;
+
+}
+.body_title h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body_title p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footing{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: darkgray;
+}
+.cut_line{
+    background-color: darkgray;
+    height: 1px;
+    width: 100%;
+}

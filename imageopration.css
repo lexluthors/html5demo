@@ -1,0 +1,25 @@
+body{
+    width: 70%;
+    margin: 10px auto;
+    height: auto;
+    background-color: #ff8b36;
+}
+.image{
+    border: 1px solid darkgray;
+    width: auto;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+img{
+    margin: 5px;
+    opacity: 1;/*透明度*/
+}
+.text{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+a:hover{
+    background-color: burlywood;/*鼠标放上去的颜色*/
+}

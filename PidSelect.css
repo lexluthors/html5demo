@@ -1,0 +1,6 @@
+#pid a{/*是与的关系，指定id设置属性，设置a标签的属性。class选择器类同id选择器，一模一样。使用.调用class,*/
+    color: chartreuse;
+}
+#divid p{
+    color: purple;
+}

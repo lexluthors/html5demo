@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器详解2</title>
+    <style>
+        [title]{
+            color: magenta;
+        }
+        [href = "https://www.baidu.com"]{
+            font-size: 30px;
+            /*必须值也相同才有效 都要是https://www.baidu.com*/
+        }
+        [title~="title"]{
+            /*~意思是模糊的意思*/
+            font-size: 50px;
+        }
+    </style>
+    <link href="selector2css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <p title="title">hello</p>
+    <p title="title1">hello</p>
+    <p title="title2">hello</p>
+    <p title="title3">hello</p>
+    <a href="https://www.baidu.com">极客学院</a>
+
+    <p> 这是一个<strong>strong <i>strong</i> hello</strong>元素</p>
+    <p>这是一个<strong>web</strong>子元素选择器</p>
+
+    <div>
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间操作</title>
+</head>
+<body onload="startTime()"><!--onload是自动运行的意思-->
+    <div id="timetxt"></div>
+
+    <script>
+        function startTime() {
+            var time = new Date();
+            var h = time.getHours();
+            var m =time.getMinutes();
+            var s = time.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById("timetxt").innerHTML=h+":"+m+":"+s;
+            t = setTimeout(function () {
+                startTime();
+            },1000);/*settimeout是刷新的意思，延时1000毫秒刷新*/
+        }
+
+        function checkTime(i) {
+            if(i<10){
+                i="0"+i;
+            }
+            return i;
+        }
+    </script>
+</body>
+</html>

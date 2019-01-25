@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件属性</title>
+</head>
+<body>
+    <div id="divid">
+        <button id="btn1">按钮</button>
+        <a id="aid" href="https://www.baidu.com">百度 </a>
+    </div>
+    <script>
+        document.getElementById("btn1").addEventListener("click",demo);
+        document.getElementById("divid").addEventListener("click",showDiv);
+        document.getElementById("aid").addEventListener("click",showA);
+        function demo(ev) {
+            alert(ev.type);
+            alert(ev.target);
+            ev.stopPropagation();//阻止事件冒泡，不让事件往外层传递。冒泡事件是从里面往外层传递。
+        }
+        function showDiv() {
+            alert("div");
+        }
+        function showA(ev) {
+            ev.stopPropagation();
+            ev.preventDefault();
+        }
+    </script>
+</body>
+</html>

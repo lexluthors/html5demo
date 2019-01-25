@@ -1,0 +1,14 @@
+*{
+    /*通配符所有没有被单独指定样式的，都是用这里的样式*/
+    margin: 0px;
+    padding: 0px;
+}
+.p1{
+    font-size: 20px;
+}
+.p2{
+    color: blue;
+}
+.p1.p2{
+    font-style: italic;
+}

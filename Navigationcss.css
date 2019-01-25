@@ -1,0 +1,25 @@
+ul{
+    list-style-type: none;/*去掉列表默认的实心圆点*/
+    margin: 0px;
+    padding: 0px;
+    background-color: cornflowerblue;
+    width: 300px;
+    text-align: center;
+}
+a:link,a:visited{
+    text-decoration: none;/*去掉a标签的下划线*/
+    /*display: block;*//*默认摆放垂直方向*/
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    width: 50px;
+}
+a:active,a:hover{
+    background-color: magenta;
+}
+li{
+    display: inline;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

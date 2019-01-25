@@ -1,0 +1,17 @@
+p strong i{
+    /*后代选择器，只作用于p中strong，strong中的i有效，只有i才有效果*/
+    /*后代选择器可以选择后代，可以p直接选i，子元素选择器必须是相近的一代才有效果*/
+    font-style: italic;
+    color: fuchsia;
+}
+
+p>strong>i{
+    /*这是子元素选择器，只能是p到strong再到i，不能跳跃，后代选择器可以跳跃*/
+    font-size: 30px;
+    color: blue;
+}
+
+li+li{
+    /*这是相邻兄弟选择器，对同一级，后面的元素有效果*/
+    color: magenta;
+}

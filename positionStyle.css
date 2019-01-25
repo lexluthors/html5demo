@@ -1,0 +1,18 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #ff8b36;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+}
+#position2{
+    width: 100px;
+    height: 100px;
+    background-color: magenta;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+    position: absolute;
+}

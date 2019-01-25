@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <div>
+        <button id="btn1">按钮</button>
+    </div>
+    <script>
+        var i = 10;
+        var j=10;
+        function demo() {
+            alert("dom0级事件处理");
+        }
+        demo();
+
+        var btn1 = document.getElementById("btn1");
+        btn1.onclick = function () {
+            alert("dom0级事件处理1");
+        };
+        btn1.onclick = function () {
+            alert("dom0级事件处理2");
+        };
+        btn1.onclick = function () {
+            alert("dom0级事件处理3");
+            /*dom0级事件被后面的覆盖*/
+        };
+
+        btn1.addEventListener("click",function () {
+            alert("dom2级事件处理1");
+        });
+        btn1.addEventListener("click",demo2);
+        function demo2() {
+            alert("dom2级事件处理2");
+            /*dom2级事件是不能被覆盖的，以此处理事件*/
+        }
+        // btn1.removeEventListener("click",demo2);
+
+        if(btn1.addEventListener){
+            btn1.addEventListener("click",demo2);
+        }else{
+            btn1.onclick = demo2();
+        }
+    </script>
+</body>
+</html>
